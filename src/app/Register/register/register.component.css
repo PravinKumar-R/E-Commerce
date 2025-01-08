@@ -1,0 +1,104 @@
+.firstName
+{
+    margin-top: -30px;
+    margin-left: 18px;
+    width: 300px;
+}
+
+.lastName
+{
+    margin-top: -52.5px;
+    margin-left: 185px;
+    width: 300px;
+}
+
+.example-card
+{
+    width: 700px;
+    height: 600px;
+    border: none;
+}
+
+.email
+{
+    margin-top: 10px;
+    margin-left: 36px;
+    width: 300px;
+}
+
+.dob
+{
+    margin-top: -79px;
+    margin-left: 371px;
+    width: 300px;
+}
+
+.field
+{
+    margin-top: 10px;
+    margin-left: 36px;
+    width: 300px;
+}
+
+.gender
+{
+    margin-top: 10px;
+    margin-left: 36px;
+    width: 300px;
+}
+
+.city
+{
+    margin-top: 10px;
+    margin-left: 36px;
+    width: 300px;
+}
+
+.pincode
+{
+    margin-top: 10px;
+    margin-left: 36px;
+    width: 300px;
+}
+
+.address
+{
+    margin-top: 10px;
+    margin-left: 36px;
+    width: 638px;
+}
+
+.title
+{
+    margin-left: 250px;
+}
+
+.titleForDialog
+{
+    margin-left: 55px;
+}
+
+.click
+{
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.registerTitle
+{
+   margin-left: 60px;
+   margin-top: 14px;
+}
+
+.save
+{
+    margin-left: 50px;
+}
+
+.error-message
+{
+    color: red;
+    font-size: small;
+    margin-left: 374px;
+    margin-top: -19.8px;
+}

@@ -1,0 +1,385 @@
+mat-toolbar {
+    background: #560383;
+    color: white;
+  }
+  
+  mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #973ec0;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 2rem;
+    color: lightgray;
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+
+  .menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+  
+    mat-icon {
+      margin-right: 8px;
+    }
+  }
+  
+  .avatar {
+    margin-top: 16px;
+    font-weight: normal;
+    background-color: none;
+  }
+  
+  .name {
+    margin-top: 8px;
+    font-weight: normal;
+  }
+  
+  .designation {
+    margin-top: -19px;
+    margin-left: -8px;
+    font-size: 0.7rem;
+    color: lightgrey;
+  }
+  
+  mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer
+  {
+    margin-top: 138px;
+  }
+
+  .welcome
+  {
+    margin-left: 1060px;
+    font-size: small;
+    margin-top: 5px;
+  }
+
+  .logout
+  {
+    margin-left: 111px;
+    height: 5px;
+    width: 5px;
+    margin-top: -40px;
+  }
+
+  .categoryDetails
+  {
+    margin-left: -48px;
+    height: 5px;
+    width: 5px;
+    margin-top: -43px;
+  }
+
+  .setting
+  {
+    margin-left: -51.5px;
+    height: 5px;
+    width: 5px;
+    margin-top: -39px;
+  }
+
+  .home
+  {
+    margin-left: 18px;
+  }
+
+  .product
+  {
+    margin-left: 27px;
+  }
+
+  .category
+  {
+    margin-left: 25px;
+  }
+
+  .cart
+  {
+    margin-left: 23px;
+  }
+
+  .customer
+  {
+    margin-left: 15px;
+  }
+
+  .productData
+  {
+    margin-left: 24px;
+  }
+
+  .categoryData
+  {
+    margin-left: 15px;
+  }
+
+  .orderData
+  {
+    margin-left: 22.5px;
+  }
+
+  .image
+  {
+    max-width: 1000px;
+    border-radius: 10px;
+    margin-top: 19px;
+    margin-left: 30px;
+  }
+
+  .top
+  {
+    display: flex;
+    height: 65px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-top: 16.5px;
+    background: #973ec0;
+    color: white;
+    font-size: 19px;
+  }
+
+  .free
+  {
+    font-size: 10px;
+    margin-left: 580px;
+    margin-top: -34px;
+  }
+
+  .refund
+  {
+    font-size: 10px;
+    margin-left: 850px;
+    margin-top: -78.5px;
+  }
+
+  .sell
+  {
+    font-size: 10px;
+    margin-left: 730px;
+    margin-top: -17.5px;
+  }
+  .sale
+  {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-left: 1171px;
+    margin-top: -17.5px;
+  }
+
+  .size
+  {
+    border-radius: 10px;
+    margin-top: -1000px;
+    margin-left: 30px;
+  }
+
+  .all
+  {
+    border-radius: 10px;
+    margin-top: -1500px;
+    margin-left: 445px;
+  }
+
+  .gopro
+  {
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-left: 447.5px;
+  }
+
+  .blink_me {
+    animation: blinker 1s linear infinite;
+    margin-left: 136px;
+    color: red;
+    margin-top: -105px;
+    font-size: large;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .user
+  {
+    width: 190px;
+    height: 180px;
+    margin-left: 40px;
+    margin-top: 17.5px;
+    background-color:  #cd8cec7d;
+  }
+
+  .wrap{
+    display: flex;
+    margin: 0 auto
+    }
+    
+    .sellerData
+  {
+    margin-left: 11.8px;
+  }
+
+    .example-card{
+   
+    height: 190px;
+    width: 190px;
+    margin-left: 40px;
+    margin-top: 17.5px;
+    }
+
+    .userName
+    {
+        margin-left: 10px;
+    }
+
+    .userGenderFemale
+    {
+        margin-top: -90px;
+        margin-left: 90px;
+    }
+
+    .userGenderMale
+    {
+        margin-top: -98px;
+        margin-left: 90px;
+    }
+
+    .userDob
+    {
+        margin-top: -10px;
+        margin-left: 90px;
+    }
+
+    .userEmailIdMale
+    {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .userEmailIdFemale
+    {
+        margin-left: 10px;
+        margin-top: 22px;
+    }
+
+    .userMobileNumberMale
+    {
+        margin-left: 10px;
+        margin-top: -13px;
+    }
+
+    .userMobileNumberFemale
+    {
+        margin-left: 10px;
+        margin-top: -13px;
+    }
+
+    .userAddressMale
+    {
+        margin-left: 10px;
+        margin-top: -1px;
+    }
+
+    .userAddressFemale
+    {
+      margin-left: 10px;
+      margin-top: -1.5px;
+    }
+
+    body {
+      background-color: #eee
+  }
+  
+  .card {
+      border: none;
+      border-radius: 10px
+  }
+  
+  .c-details span {
+      font-weight: 300;
+      font-size: 13px
+  }
+  
+  .icon {
+      width: 50px;
+      height: 50px;
+      background-color: #eee;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 39px
+  }
+  
+  .badge span {
+      background-color: #fffbec;
+      width: 60px;
+      height: 25px;
+      padding-bottom: 3px;
+      border-radius: 5px;
+      display: flex;
+      color: #fed85d;
+      justify-content: center;
+      align-items: center
+  }
+  
+  .progress {
+      height: 10px;
+      border-radius: 10px
+  }
+  
+  .progress div {
+      background-color: red
+  }
+  
+  .text1 {
+      font-size: 14px;
+      font-weight: 600
+  }
+  
+  .text2 {
+      color: #a5aec0
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+
+  .data{
+     font-size: 30px;
+     text-align: center;
+     line-height: 1;
+  }

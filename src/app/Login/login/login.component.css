@@ -1,0 +1,83 @@
+.example-card {
+    max-width: 980px;
+    max-height: 600px;
+    background-color: rgb(225, 234, 231);
+  }
+  
+  .example-card-footer {
+    padding: 160px;
+  }
+  
+  .image
+  {
+    margin-left: 10px;
+    margin-top: -403px;
+    max-width: 450px;
+    border-radius: 10px;
+  }
+
+  .text
+  {
+    margin-left: 500px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .loginUserName{
+    margin-left: 16px;
+    margin-top: 40px;
+    width: 400px;
+  }
+
+  .password
+  {
+    margin-left: 16px;
+    margin-top: -10px;
+    width: 400px;
+  }
+
+  .form{
+    margin-left: 16px;
+    margin-top: 40px;
+    width: 400px;
+  }
+
+  .field
+  {
+    margin-left: 16px;
+    margin-top: -10px;
+    width: 400px;
+  }
+
+  .passwordField
+  {
+    color: red;
+    margin-top: -10px;
+    margin-left: 285px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    background: none;
+    font-size: 15px;
+  }
+
+  .flat
+  {
+    margin-top: -10px;
+    margin-left: 15px;
+  }
+
+  .create
+  {
+    margin-top: -10px;
+    margin-left: 15px;
+  }
+
+  .app
+  {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

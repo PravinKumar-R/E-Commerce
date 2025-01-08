@@ -1,0 +1,134 @@
+<mat-toolbar class="mat-elevation-z8">
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon *ngIf="sidenav"> menu </mat-icon>
+    </button>
+    E-Commerce
+    <div class="welcome">
+        Welcome back Suresh
+    </div>
+    <div class="logout">
+        <button mat-icon-button routerLink="/login">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                <path d="M7.5 1v7h1V1z"/>
+                <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"/>
+              </svg>
+        </button>
+        </div>
+        <div class="categoryDetails">
+        <button mat-icon-button>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-minecart" viewBox="0 0 16 16">
+            <path d="M4 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4m8-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4M.115 3.18A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 14 12H2a.5.5 0 0 1-.491-.408l-1.5-8a.5.5 0 0 1 .106-.411zm.987.82 1.313 7h11.17l1.313-7z"/>
+          </svg>
+        </button>
+    </div>
+    <div class="setting">
+        <button mat-icon-button (click)="openDialog('0ms', '0ms')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+      </svg>
+</button>
+    </div>
+  </mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav class="mat-elevation-z8">
+<h4 class="name"><b>RELEVANTZ</b></h4>
+<p class="designation">25 YEARS</p>
+
+<mat-divider></mat-divider>
+        <button mat-button class="menu-button" routerLink="/homePage">
+          <mat-icon>home</mat-icon>
+          <span class="home">Home</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/product">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-luggage" viewBox="0 0 16 16">
+                <path d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5zM5 5H3V2h2z"/>
+                <path d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0zM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6zM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5M6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5m7 5.5V9H8v6zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6z"/>
+              </svg>
+          <span class="product">Product</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/category">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers" viewBox="0 0 16 16">
+                <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+              </svg>
+          <span class="category">Category</span>
+        </button>
+        <button mat-button class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-left: 1.5px;" fill="currentColor" class="bi bi-minecart" viewBox="0 0 16 16">
+                <path d="M4 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4m8-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4M.115 3.18A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 14 12H2a.5.5 0 0 1-.491-.408l-1.5-8a.5.5 0 0 1 .106-.411zm.987.82 1.313 7h11.17l1.313-7z"/>
+              </svg>
+            <span class="cart">Cart</span>
+          </button>
+        <mat-divider></mat-divider>
+      
+     <button mat-button class="menu-button" routerLink="/user">
+        <mat-icon>person</mat-icon>
+        <span class="customer">Customer</span>
+      </button>
+    <button mat-button class="menu-button" routerLink="/productAdd">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-luggage" viewBox="0 0 16 16">
+            <path d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5zM5 5H3V2h2z"/>
+            <path d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0zM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6zM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5M6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5m7 5.5V9H8v6zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6z"/>
+          </svg>
+        <span class="productData">Product Data</span>
+</button>
+<button mat-button class="menu-button" routerLink="/categoryAdd">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers" viewBox="0 0 16 16">
+        <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+      </svg>
+    <span class="categoryData">Category Data</span>
+</button>
+<button mat-button class="menu-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-left: 1.5px;" fill="currentColor" class="bi bi-minecart" viewBox="0 0 16 16">
+        <path d="M4 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4m8-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4M.115 3.18A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 14 12H2a.5.5 0 0 1-.491-.408l-1.5-8a.5.5 0 0 1 .106-.411zm.987.82 1.313 7h11.17l1.313-7z"/>
+      </svg>
+    <span class="orderData">Order Data</span>
+</button>
+<button mat-button class="menu-button" routerLink="/sellerAdd">
+    <mat-icon width="16" height="16" style="margin-left: 1.5px;">record_voice_over</mat-icon>
+  <span class="sellerData">Seller Data</span>
+</button>
+    <h6 class="footer">COPYRIGHT 2024 &#64;Relevantz</h6>
+  </mat-sidenav>
+  <div>
+    <mat-card appearance="outlined" class="top">
+        <mat-card-content style="margin-top: 3.1px;"><b>Add Category</b></mat-card-content>
+        <form [formGroup]="form">
+            <div class="free">
+                <mat-form-field class="categoryName">
+                    <mat-label for="categoryName">Category Name</mat-label>
+                    <input matInput formControlName="categoryName" id="categoryName" class="form-control"/>
+                  </mat-form-field>
+            </div>
+            
+            <div class="refund">
+                <mat-form-field class="addedDate">
+                    <mat-label for="addedDate">Added date</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="addedDate" id="addedDate" class="form-control">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <button mat-flat-button (click)="add(form.value)" style="background-color: orange; width: 90px; margin-top: -130px; margin-left: 1150px;">Add</button>
+        </form>
+      </mat-card>
+  </div>
+  <div class="container responsive-grid">
+    <div *ngFor="let category of categoryData">
+      <mat-card appearance="outlined" class="user">
+        <h5></h5>
+        <h5></h5>
+        <h5></h5>
+        <h5></h5>
+        <h5></h5>
+        <h5></h5>
+          <div class="data">{{category.categoryName}}</div>
+        </mat-card>
+  </div>
+        </div>
+</mat-sidenav-container>
+<mat-sidenav class="mat-elevation-z8">
+      </mat-sidenav>

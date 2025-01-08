@@ -1,0 +1,42 @@
+  <div class="app">
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+    </mat-card-header>
+    <div class="text">
+        <mat-card-content>
+            Welcome Back, Please Log in <br/>
+            To Your Account.
+        </mat-card-content>
+        <form [formGroup]="form">
+            <mat-form-field class="loginUserName">
+              <mat-label for="loginUserName">Enter your email</mat-label>
+              <input
+                matInput
+                placeholder="suresh@example.com"
+                required
+                formControlName="loginUserName" id="loginUserName" class="form-control"
+              />
+            </mat-form-field>
+            <mat-form-field class="password">
+                <mat-label for="password">Enter your password</mat-label>
+                <input matInput [type]="hide() ? 'password' : 'text'" required formControlName="password" id="password" class="form-control"/>
+                <button
+                  mat-icon-button
+                  matSuffix
+                  (click)="clickEvent($event)"
+                  [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide()"
+                >
+                  <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              <h3 class="passwordField" (click)="openDialogForForgetPassword('0ms', '0ms')">Forget Password?</h3>
+              <button mat-flat-button style="background-color: orange; color: white;" class="flat" (click)="login(form.value)">Sign in</button>
+              <button mat-flat-button class="create" (click)="openDialog('0ms', '0ms')">Create Account</button>
+              </form>
+    </div>
+    <img src="assets/page.PNG" class="image">
+    <h5> </h5>
+</mat-card>
+</div>
